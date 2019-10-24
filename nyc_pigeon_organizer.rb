@@ -6,11 +6,9 @@ p_list = {}
         if !p_list[name]
           p_list[name] = {}
         end
-        if p_list[name][key]
-          p_list[name][key] << value1
-        else
-          p_list[name][key] = value1
-        end
+        if !p_list[name][key]
+          p_list[name][key] = []
+        
     
         
         
