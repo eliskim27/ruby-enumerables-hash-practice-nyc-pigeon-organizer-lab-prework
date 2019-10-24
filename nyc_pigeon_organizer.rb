@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   p_list = {}
-#  data.each do |key, value|
-    data[:gender].each do |boygirl, names|
+  data.each do |key, value1|
+    value1.each do |value2, names|
       names.each do |name|
         if !p_list[name]
           p_list[name] = {}
