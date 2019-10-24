@@ -8,12 +8,8 @@ p_list = {}
         end
         if !p_list[name][key]
           p_list[name][key] = []
-        
-    
-        
-        
-        
-        
+        end
+        p_list[name][key] << value2
       end
     end
   end
