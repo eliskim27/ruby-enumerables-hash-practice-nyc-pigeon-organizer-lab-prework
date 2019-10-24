@@ -9,7 +9,7 @@ p_list = {}
         if !p_list[name][key]
           p_list[name][key] = []
         end
-        p_list[name][key] << value2
+        p_list[name][key] << value2.to_s
       end
     end
   end
