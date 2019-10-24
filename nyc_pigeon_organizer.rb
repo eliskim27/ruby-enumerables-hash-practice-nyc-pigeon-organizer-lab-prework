@@ -1,14 +1,16 @@
 def nyc_pigeon_organizer(data)
-  pigeon_list = {}
-  data[:lives].keys.each do |location|              #iterate over lives hash
-    data[:lives[location]].each do |name|      #iterate over location
-
-      pigeon_list["#{data[:lives][location][name]}"] = {}
+  p_list = {}
+  data.each do |key, value|
+    value.each do |new_value, names|
+      names.each do |name|
+        
+        if !new_hash[name]
+          new_hash[name] = {}
+        end
+      end
     end
   end
-  
-  
-  pigeon_list
+  p_list
 end
 
 
