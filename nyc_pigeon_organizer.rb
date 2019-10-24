@@ -1,10 +1,9 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  pigeon_data[:lives].keys.each do |location|              #iterate over lives hash
-    pigeon_data[:lives[location]].each do |name|      #iterate over location
-    if pigeon_data
+  data[:lives].keys.each do |location|              #iterate over lives hash
+    data[:lives[location]].each do |name|      #iterate over location
 
-      pigeon_list["#{pigeon_data[:lives][location][name]}"] = {}
+      pigeon_list["#{data[:lives][location][name]}"] = {}
     end
   end
   
