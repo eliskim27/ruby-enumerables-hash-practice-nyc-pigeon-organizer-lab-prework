@@ -1,12 +1,14 @@
 def nyc_pigeon_organizer(data)
   p_list = {}
-  data.each do |key, value|
-    value.each do |new_value, names|
+#  data.each do |key, value|
+    data[:gender].each do |boygirl, names|
       names.each do |name|
-        
-        if !new_hash[name]
-          new_hash[name] = {}
+        if !p_list[name]
+          p_list[name] = {}
         end
+        
+        
+        
       end
     end
   end
