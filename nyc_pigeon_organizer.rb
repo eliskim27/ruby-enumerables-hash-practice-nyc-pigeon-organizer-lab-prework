@@ -6,6 +6,7 @@ p_list = {}
         if !p_list[name]
           p_list[name] = {}
         end
+        p_list[name][key] = value1
         
         
         
